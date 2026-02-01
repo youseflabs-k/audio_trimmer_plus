@@ -1,0 +1,25 @@
+name: audio_trimmer_plus_example
+description: Example app demonstrating the audio_trimmer_plus package.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audio_trimmer_plus:
+    path: ../
+  file_picker: ^8.1.6
+  audio_waveforms: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
