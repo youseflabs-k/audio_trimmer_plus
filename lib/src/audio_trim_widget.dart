@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:audio_trimmer_plus/audio_trimmer.dart';
+import 'package:audio_trimmer_plus/audio_trimmer_plus.dart';
 import 'package:audio_trimmer_plus/src/audio_trim_waveform_panel.dart';
 import 'package:audio_trimmer_plus/src/widgets/audio_trim_picker.dart';
 import 'package:audio_waveforms/audio_waveforms.dart';

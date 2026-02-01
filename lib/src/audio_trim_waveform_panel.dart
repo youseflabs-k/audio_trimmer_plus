@@ -1,4 +1,4 @@
-import 'package:audio_trimmer_plus/audio_trimmer.dart';
+import 'package:audio_trimmer_plus/audio_trimmer_plus.dart';
 import 'package:audio_waveforms/audio_waveforms.dart';
 import 'package:flutter/material.dart';
 

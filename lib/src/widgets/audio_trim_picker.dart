@@ -1,4 +1,4 @@
-import 'package:audio_trimmer_plus/audio_trimmer.dart';
+import 'package:audio_trimmer_plus/audio_trimmer_plus.dart';
 import 'package:flutter/material.dart';
 
 /// A picker widget for audio trimming with an overlay and tap action.
