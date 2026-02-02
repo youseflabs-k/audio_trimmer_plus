@@ -74,7 +74,7 @@ flutter pub add file_picker
 ### 1. Import the Package
 
 ```dart
-import 'package:audio_trimmer_plus/audio_trimmer.dart';
+import 'package:audio_trimmer_plus/audio_trimmer_plus.dart';
 import 'package:file_picker/file_picker.dart';
 ```
 
@@ -122,7 +122,7 @@ That's it! Your audio trimmer is ready. 🎉
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:audio_trimmer_plus/audio_trimmer.dart';
+import 'package:audio_trimmer_plus/audio_trimmer_plus.dart';
 import 'package:audio_waveforms/audio_waveforms.dart';
 import 'package:file_picker/file_picker.dart';
 

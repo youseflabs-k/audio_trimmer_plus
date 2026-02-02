@@ -1,6 +1,6 @@
 name: audio_trimmer_plus
 description: A customizable Flutter widget for audio trimming UI with waveform visualization, trim handles, and playback controls.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/youseflabs-k/audio_trimmer_plus
 
 environment:

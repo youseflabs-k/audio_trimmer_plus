@@ -1,4 +1,4 @@
-import 'package:audio_trimmer_plus/audio_trimmer.dart';
+import 'package:audio_trimmer_plus/audio_trimmer_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:audio_waveforms/audio_waveforms.dart';
@@ -58,8 +58,9 @@ class _AudioTrimmerExamplePageState extends State<AudioTrimmerExamplePage>
       setState(() => _isLoadingAudio = true);
 
       final result = await FilePicker.platform.pickFiles(
-        type: FileType.audio,
+        type: FileType.custom,
         allowMultiple: false,
+        allowedExtensions: const ['mp3', 'wav', 'm4a', 'flac', 'aac'],
       );
 
       if (result != null && result.files.single.path != null) {
@@ -187,7 +188,7 @@ class _AudioTrimmerExamplePageState extends State<AudioTrimmerExamplePage>
                         handleColor: Colors.deepPurple,
                         progressColor: Colors.deepPurpleAccent.withValues(alpha: 0.7),
                       ),
-                      scaleFactor: 500.0,
+                      scaleFactor: 75.0,
                       fixedWaveColor: Colors.deepPurple.withOpacity(0.2),
                       waveSpacing: 4.0,
                       onTrimRangeChanged: _handleTrimRangeChanged,

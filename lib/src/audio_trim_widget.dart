@@ -279,19 +279,12 @@ class _AudioTrimWidgetState extends State<AudioTrimWidget>
     await _playerController.startPlayer();
     _startEndWatcher();
 
-    final endMs = _currentTrimEndMs;
-    final windowDurationMs = endMs != null
-        ? (endMs - _currentTrimStartMs).clamp(1, double.infinity)
-        : maxDuration.toDouble();
-
     // Ensure valid duration before setting animation
-    if (windowDurationMs > 0) {
-      _internalProgressController
-        ..stop()
-        ..value = 0.0
-        ..duration = Duration(milliseconds: windowDurationMs.round());
-      _internalProgressController.forward(from: 0.0);
-    }
+    _internalProgressController
+      ..stop()
+      ..value = 0.0
+      ..duration = Duration(milliseconds: widget.trimWindowMs.round());
+    _internalProgressController.forward(from: 0.0);
   }
 
   Future<void> _loadWaveform(String path) async {
